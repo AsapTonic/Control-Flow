@@ -1,13 +1,26 @@
-const array = [0, null, undefined, '',2, 3];
-console.log (countTruthy(array));
 
 
+const output= fizzBuzz (false);
+console.log (output);
 
-function countTruthy (array){
-let count = 0;
-for (let value of array)
-    if (value)
-        count++;
-    return count;
+function fizzBuzz (input){
+   
+    if (typeof input !== 'number')
+        return 'Not a number';
+    
+    if (input % 3===0 && input %5===0)
+        return "FizzBuzz";
+
+
+if (input %3===0)
+    return "Fizz";
+
+if (input %5===0)
+    return "Buzz";
+
+
+    if (input % 3 !== 0 && input % 5 !== 0)
+        return input
+    return input;
 
 }
