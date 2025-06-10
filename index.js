@@ -1,26 +1,15 @@
+console.log(Address)
 
+function createAddress (street, city, zipCode){
+return {
+    street,
+    city, zipCode
+};
+}
 
-const output= fizzBuzz (false);
-console.log (output);
-
-function fizzBuzz (input){
-   
-    if (typeof input !== 'number')
-        return 'Not a number';
-    
-    if (input % 3===0 && input %5===0)
-        return "FizzBuzz";
-
-
-if (input %3===0)
-    return "Fizz";
-
-if (input %5===0)
-    return "Buzz";
-
-
-    if (input % 3 !== 0 && input % 5 !== 0)
-        return input
-    return input;
+function Address (street, city, zipCode){
+    this.street=street;
+    this.city=city;
+    this.zipCode=zipCode;
 
 }
