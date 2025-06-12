@@ -1,15 +1,10 @@
-let post ={
-title: 'a',
-body: 'b',
-author: 'c',
-views: 10,
-comments: [
-    
-    {author:'a', body: 'b',},
-    {author: 'c', body: 'd',},
-    
-],
-isLive: true
+let book = {
+    title: "the Alchemist",
+    author: "Paulo Coelho",
+    pages: 208
 
 };
-console.log(post);
+
+for (let key in book){
+    console.log(key, book[key]);
+}
