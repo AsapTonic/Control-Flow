@@ -1,10 +1,16 @@
-let book = {
-    title: "the Alchemist",
-    author: "Paulo Coelho",
-    pages: 208
+let glassFull= false;
 
-};
-
-for (let key in book){
-    console.log(key, book[key]);
+while(!glassFull){
+    console.log("pouring water...");
+    glassFull=true;
 }
+
+
+let n= 5;
+
+while (n>0){
+console.log (n);
+n--;
+}
+
+console.log ("Blast Off");
