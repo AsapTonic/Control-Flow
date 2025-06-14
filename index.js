@@ -1,17 +1,18 @@
-// let student ={
-//     name: 'Sara',
-//     grade: 'A',
-//     subject: 'Math',
 
-// };
 
-// for (let key in student){
-//     console.log(key, student[key]);
-// }
+const output=fizzBuzz(10);
+console.log (output);
 
-let subjects=['Math', 'Science', 'History'];
+function fizzBuzz (i){
 
-for (let subject of subjects){
+if (i%3===0 && i%5===0)
+    return "fizzBuzz";
 
-    console.log(subject);
+if (i%3===0)
+    return "fizz";
+
+if (i%5===0)
+    return "Buzz";
+
+return i;
 }
